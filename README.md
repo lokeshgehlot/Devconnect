@@ -1,79 +1,83 @@
-# 🚀 DevConnect
+💬 DevConnect — Developer Collaboration Platform (MERN Stack)
+📌 Project Overview
+DevConnect is a full-stack developer collaboration platform built using the MERN stack (MongoDB, Express, React, Node.js).
 
-**DevConnect** is a full-stack developer collaboration platform built using the MERN stack. It allows developers to create profiles, discover other developers, and communicate via direct messages — all in one modern, streamlined interface.
+It allows developers to:
 
----
+📄 Create profiles and showcase skills
 
-## 🌟 Features
+🔍 Discover and connect with other developers
 
-- 🔐 **User Authentication** with secure JWT login and registration
-- 🧑‍💻 **Developer Profiles** with name, bio, skills, GitHub & LinkedIn links
-- 🌍 **Developer Directory** with search by skills
-- 💬 **Messaging System**: Send and receive messages between developers
-- 📥 **Inbox & Sentbox** views for message history
-- 🧭 **Protected Routes** and role-based access control
-- ✨ **Modern UI** with polished pages for registration, login, dashboard, and profiles
+💬 Send and receive messages (inbox + sentbox)
 
----
+👨‍💻 Explore profiles based on technology stacks
 
-## 🛠 Tech Stack
+📷 Screenshots- 
 
-- **Frontend**: React.js, React Router DOM, Axios
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB & Mongoose
-- **Authentication**: JWT (JSON Web Token)
-- **Styling**: Plain CSS 
+🏠 Home Page 
+Screenshots/Dashboard.png
 
----
+👥 Developer Directory
+Screenshots/Devlopers.png
 
-## 📁 Folder Structure
+💬 Messaging Interface
+Screenshots/Inbox.png
+Screenshots/Sentbox.png
 
-DevConnect/
-├── client/ # React frontend
-│ ├── components/
-│ ├── pages/
-│ └── api.js
-├── server/ # Express backend
-│ ├── models/
-│ ├── routes/
-│ ├── controllers/
-│ └── middleware/
-├── .env
-├── README.md
-└── package.json
+📄 User Profile Page
+Screenshots/User Profile.png
 
-
----
-
-## 🚀 Getting Started (Local Setup)
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/lokeshgehlot/DevConnect.git
-cd DevConnect
-
-Set up backend
-
+⚙️ Installation & Setup
+1. 📁 Clone the repository
+```
+git clone https://github.com/lokeshgehlot/Devconnect.git
+cd Devconnect
+```
+2. 🖥 Backend Setup
+```
 cd server
 npm install
-Create a .env file in /server with:
+```
+Create a .env file inside the server/ folder:
 
+env -
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
+JWT_SECRET=your_jwt_secret
 PORT=5000
-Run backend
 
+Start backend:
+```
 node server.js
-Set up frontend
-
+```
+3. 🌐 Frontend Setup
+```
 cd ../client
 npm install
 npm start
+```
+The app will run at http://localhost:3000
 
-📸 Screenshots
+🔑 Features
+✅ JWT-based user authentication
 
+🧑‍💻 Developer profiles with skills, GitHub & LinkedIn links
 
+🔍 Filter developers by skills
 
-🤝 Contributing
-Pull requests are welcome! For major changes, please open an issue first.
+💬 Real-time messaging system
+
+📨 Inbox and Sent messages tracking
+
+🔐 Protected API routes
+
+🛠 Tech Stack
+
+**Frontend -	React.js
+**Backend	- Node.js, Express.js
+**Database -	MongoDB + Mongoose
+**Auth -	JSON Web Tokens (JWT)
+**Styling -	CSS (no external libraries used)
+
+📫 Contact
+Feel free to connect with me on LinkedIn or raise an issue in the repo for suggestions.
+
